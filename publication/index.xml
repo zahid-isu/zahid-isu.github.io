@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications | Sumon Biswas</title>
-    <link>https://sumonbis.github.io/publication/</link>
-      <atom:link href="https://sumonbis.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <title>Publications | Zahid Hasan</title>
+    <link>https://zahid-isu.github.io/publication/</link>
+      <atom:link href="https://zahid-isu.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Sumon Biswas</copyright><lastBuildDate>Sun, 14 May 2023 21:25:33 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Zahid Hasan</copyright><lastBuildDate>Sun, 14 May 2023 21:25:33 -0500</lastBuildDate>
     <image>
-      <url>https://sumonbis.github.io/media/icon_hub4cc8572db2cf4087d387aa00fd8abd9_555_512x512_fill_lanczos_center_3.png</url>
+      <url>https://zahid-isu.github.io/media/icon_hub4cc8572db2cf4087d387aa00fd8abd9_555_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
-      <link>https://sumonbis.github.io/publication/</link>
+      <link>https://zahid-isu.github.io/publication/</link>
     </image>
     
     <item>
-      <title>Fairify: Fairness Verification of Neural Networks</title>
-      <link>https://sumonbis.github.io/publication/icse23a/</link>
+      <title>DriveCLIP: Zero-shot transfer for distracted driving
+activity understanding using CLIP</title>
+      <link>https://zahid-isu.github.io/publication/neurips22/</link>
       <pubDate>Sun, 14 May 2023 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/icse23a/</guid>
+      <guid>https://zahid-isu.github.io/publication/neurips22/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -28,9 +29,9 @@
     
     <item>
       <title>Towards Understanding Fairness and its Composition in Ensemble Machine Learning</title>
-      <link>https://sumonbis.github.io/publication/icse23b/</link>
+      <link>https://zahid-isu.github.io/publication/icse23b/</link>
       <pubDate>Sun, 14 May 2023 21:20:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/icse23b/</guid>
+      <guid>https://zahid-isu.github.io/publication/icse23b/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -42,9 +43,9 @@
     
     <item>
       <title>23 Shades of Self-Admitted Technical Debt: An Empirical Study on Machine Learning Software</title>
-      <link>https://sumonbis.github.io/publication/esec-fse22/</link>
+      <link>https://zahid-isu.github.io/publication/esec-fse22/</link>
       <pubDate>Tue, 14 Jun 2022 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/esec-fse22/</guid>
+      <guid>https://zahid-isu.github.io/publication/esec-fse22/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -56,9 +57,9 @@
     
     <item>
       <title>The Art and Practice of Data Science Pipelines: A Comprehensive Study of Data Science Pipelines In Theory, In-The-Small, and In-The-Large</title>
-      <link>https://sumonbis.github.io/publication/icse22/</link>
+      <link>https://zahid-isu.github.io/publication/icse22/</link>
       <pubDate>Sat, 21 May 2022 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/icse22/</guid>
+      <guid>https://zahid-isu.github.io/publication/icse22/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -70,9 +71,9 @@
     
     <item>
       <title>Fair Preprocessing: Towards Understanding Compositional Fairness of Data Transformers in Machine Learning Pipeline</title>
-      <link>https://sumonbis.github.io/publication/esec-fse21/</link>
+      <link>https://zahid-isu.github.io/publication/esec-fse21/</link>
       <pubDate>Thu, 20 May 2021 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/esec-fse21/</guid>
+      <guid>https://zahid-isu.github.io/publication/esec-fse21/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -84,9 +85,9 @@
     
     <item>
       <title>Do the Machine Learning Models on a Crowd Sourced Platform Exhibit Bias? An Empirical Study on Model Fairness</title>
-      <link>https://sumonbis.github.io/publication/esec-fse20/</link>
+      <link>https://zahid-isu.github.io/publication/esec-fse20/</link>
       <pubDate>Sun, 08 Nov 2020 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/esec-fse20/</guid>
+      <guid>https://zahid-isu.github.io/publication/esec-fse20/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -98,9 +99,9 @@
     
     <item>
       <title>Boa Meets Python: A Boa Dataset of Data Science Software in Python Language</title>
-      <link>https://sumonbis.github.io/publication/msr19/</link>
+      <link>https://zahid-isu.github.io/publication/msr19/</link>
       <pubDate>Sun, 26 May 2019 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/msr19/</guid>
+      <guid>https://zahid-isu.github.io/publication/msr19/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -112,9 +113,9 @@
     
     <item>
       <title>A Secure Data Security Infrastructure for Small Organization in Cloud Computing</title>
-      <link>https://sumonbis.github.io/publication/iceeict15b/</link>
+      <link>https://zahid-isu.github.io/publication/iceeict15b/</link>
       <pubDate>Thu, 21 May 2015 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/iceeict15b/</guid>
+      <guid>https://zahid-isu.github.io/publication/iceeict15b/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -126,9 +127,9 @@
     
     <item>
       <title>Applying Ant Colony Optimization in Software testing to Generate Prioritized Optimal Path and Test Data</title>
-      <link>https://sumonbis.github.io/publication/iceeict15a/</link>
+      <link>https://zahid-isu.github.io/publication/iceeict15a/</link>
       <pubDate>Thu, 21 May 2015 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/iceeict15a/</guid>
+      <guid>https://zahid-isu.github.io/publication/iceeict15a/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -140,9 +141,9 @@
     
     <item>
       <title>Cloud Based Healthcare Application Architecture and Electronic Medical Record Mining: An Integrated Approach to Improve Healthcare System</title>
-      <link>https://sumonbis.github.io/publication/iccit14/</link>
+      <link>https://zahid-isu.github.io/publication/iccit14/</link>
       <pubDate>Mon, 22 Dec 2014 21:25:33 -0500</pubDate>
-      <guid>https://sumonbis.github.io/publication/iccit14/</guid>
+      <guid>https://zahid-isu.github.io/publication/iccit14/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
