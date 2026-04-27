@@ -582,8 +582,8 @@
 }
 /* Leadership cards */
 .leadership-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 .leadership-card {
@@ -659,8 +659,36 @@
 #leadership .container {
   max-width: 1100px;
 }
+/* Experience two-column grid */
+.exp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+.exp-grid .card {
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s ease;
+}
+.exp-grid .card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+/* Peer review tile soft brand tints */
+.review-tile.tint-iclr       { background: #fef3e2; border-color: #f9d49a; }
+.review-tile.tint-medical     { background: #e8f5e9; border-color: #a5d6a7; }
+.review-tile.tint-ieee        { background: #e3f2fd; border-color: #90caf9; }
+.review-tile.tint-eaai        { background: #fff3e0; border-color: #ffcc80; }
+.review-tile.tint-trd         { background: #f3e5f5; border-color: #ce93d8; }
+.review-tile.tint-pattern     { background: #e0f2f1; border-color: #80cbc4; }
+.review-tile.tint-neuro       { background: #e8eaf6; border-color: #9fa8da; }
+.review-tile.tint-cee         { background: #fce4ec; border-color: #f48fb1; }
+.review-tile.tint-digital     { background: #e0f7fa; border-color: #80deea; }
 @media (max-width: 768px) {
   .review-grid {
+    grid-template-columns: 1fr;
+  }
+  .leadership-grid {
     grid-template-columns: 1fr;
   }
   .leadership-card {
@@ -671,14 +699,15 @@
   .leadership-card .lead-tasks li {
     text-align: left;
   }
-}
-@media (max-width: 768px) {
   .pub-card {
     flex-direction: column;
   }
   .pub-card-img {
     flex: none;
     max-width: 100%;
+  }
+  .exp-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>
@@ -1566,267 +1595,104 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
 
 <div class="col-12">
 
+  <div class="exp-grid">
 
-
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col ">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border exp-fill">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/Corteva.png" width="56px" height="56px" alt="Corteva Agriscience"></a></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title my-0">Agentic AI Research Intern</div>
-              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.corteva.com/" target="_blank" rel="noopener">Corteva Agriscience</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://www.linkedin.com/in/jbarr1/" target="_blank" rel="noopener">Jeremiah Barr</a></div>
-              <div class="section-subheading card-title exp-company my-0">Topic: Building AI Agents for yield deviation explanation</a></div>
-              
-              <div class="text-muted exp-meta">
-                March 2026 – Present
-                  <span class="middot-divider"></span>
-                  <span>Johnston, IA </span>
-                
-              </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-content-start">
+          <div class="mr-2 mb-2"><a href="https://www.corteva.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/Corteva.png" width="56px" height="56px" alt="Corteva Agriscience"></a></div>
+          <div>
+            <div class="section-subheading card-title exp-title my-0">Agentic AI Research Intern</div>
+            <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.corteva.com/" target="_blank" rel="noopener">Corteva Agriscience</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://www.linkedin.com/in/jbarr1/" target="_blank" rel="noopener">Jeremiah Barr</a></div>
+            <div class="section-subheading card-title exp-company my-0">Topic: Building AI Agents for yield deviation explanation</div>
+            <div class="text-muted exp-meta">
+              March 2026 – Present
+              <span class="middot-divider"></span>
+              <span>Johnston, IA</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  
 
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="56px" height="56px" alt="Self-aware Complex System Lab, Iowa State University"></a></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title my-0">Research Assistant</div>
-              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://sites.google.com/view/scslab-isu/home" target="_blank" rel="noopener">Self-aware Complex System Lab, Iowa State University</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://sites.google.com/view/scslab-isu/principal-investigator" target="_blank" rel="noopener">Dr. Soumik Srakar</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://reactor.ctre.iastate.edu/" target="_blank" rel="noopener">Real-Time Analytics of Transportation Data Lab (REACTOR Lab), Iowa State University</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://www.ccee.iastate.edu/directory/profile/anujs/" target="_blank" rel="noopener">Dr. Anuj Sharma</a></div>
-              <div class="section-subheading card-title exp-company my-0">Topic: Efficient finetuning of VLM/MLLM for human-centric applications (e.g. transportation, healthcare, agriculture)</a></div>
-
-              <div class="text-muted exp-meta">
-                June 2021 –
-                
-                  March 2026
-                
-                  <span class="middot-divider"></span>
-                  <span>Ames, IA </span>
-                
-              </div>
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-content-start">
+          <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="56px" height="56px" alt="Iowa State University"></a></div>
+          <div>
+            <div class="section-subheading card-title exp-title my-0">Research Assistant</div>
+            <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://sites.google.com/view/scslab-isu/home" target="_blank" rel="noopener">Self-aware Complex System Lab, Iowa State University</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://sites.google.com/view/scslab-isu/principal-investigator" target="_blank" rel="noopener">Dr. Soumik Sarkar</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://reactor.ctre.iastate.edu/" target="_blank" rel="noopener">REACTOR Lab, Iowa State University</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://www.ccee.iastate.edu/directory/profile/anujs/" target="_blank" rel="noopener">Dr. Anuj Sharma</a></div>
+            <div class="section-subheading card-title exp-company my-0">Topic: Efficient finetuning of VLM/MLLM for human-centric applications (e.g. transportation, healthcare, agriculture)</div>
+            <div class="text-muted exp-meta">
+              June 2021 – March 2026
+              <span class="middot-divider"></span>
+              <span>Ames, IA</span>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-content-start">
+          <div class="mr-2 mb-2"><a href="https://www.rtx.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/RTX.png" width="56px" height="56px" alt="RTX Corporation"></a></div>
+          <div>
+            <div class="section-subheading card-title exp-title my-0">Machine Learning Research Intern</div>
+            <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.rtx.com/" target="_blank" rel="noopener">RTX Corporation</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0">
+              Supervisor:
+              <div><a href="https://www.linkedin.com/in/kunal-srivastava-20b603b/" target="_blank" rel="noopener">Kunal Srivastava</a>, Senior Manager</div>
+              <div><a href="https://www.linkedin.com/in/soumalya-sarkar-12b90a3b/" target="_blank" rel="noopener">Soumalya Sarkar</a>, Principal Research Scientist</div>
+              <div style="color: black;">Topic: Spatial Reasoning &amp; 3D Understanding of MLLM for Engineering Design</div>
+            </div>
+            <div class="text-muted exp-meta">
+              June 2025 – September 2025
+              <span class="middot-divider"></span>
+              <span>East Hartford, CT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <div class="d-flex align-content-start">
+          <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="56px" height="56px" alt="Iowa State University"></a></div>
+          <div>
+            <div class="section-subheading card-title exp-title my-0">Teaching Assistant</div>
+            <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.ece.iastate.edu/" target="_blank" rel="noopener">Dept. of Electrical and Computer Engineering, Iowa State University</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://www.engineering.iastate.edu/people/profile/vlthorl/" target="_blank" rel="noopener">Vicky Thorland-Oster</a></div>
+            <div class="section-subheading card-title exp-company text-muted my-0">
+              Courses:
+              <ul style="margin-top: 0.3rem; margin-bottom: 0;">
+                <li><a href="https://catalog.iastate.edu/azcourses/e_e/#:~:text=EE%205260%3A%20Deep%20Learning%3A%20Theory%20and%20Practice" target="_blank" rel="noopener">EE 526: Deep Learning: Theory and Practice</a></li>
+                <li><a href="https://catalog.iastate.edu/azcourses/e_e/#:~:text=EE%204220%3A%20Communication%20Systems%20II" target="_blank" rel="noopener">EE 422: Communication System II</a></li>
+                <li><a href="https://catalog.iastate.edu/previouscatalogs/2022-2023/azcourses/e_e/#:~:text=E%C2%A0E%C2%A0423%3A%20Communication%20Systems%20Laboratory" target="_blank" rel="noopener">EE 423: Communication System Lab</a></li>
+                <li><a href="https://catalog.iastate.edu/previouscatalogs/2022-2023/azcourses/e_e/#:~:text=E%C2%A0E%C2%A0332%3A%20Semiconductor%20Materials%20and%20Devices" target="_blank" rel="noopener">EE 332: Semiconductor Materials &amp; Devices</a></li>
+              </ul>
+            </div>
+            <div class="text-muted exp-meta">
+              Jan 2021 – May 2021
+              <span class="middot-divider"></span>
+              <span>Ames, IA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><a href="https://www.rtx.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/RTX.png" width="56px" height="56px" alt="RTX Corporation"></a></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title my-0"> Machine Learning Research Intern</div>
-              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.rtx.com/" target="_blank" rel="noopener">RTX Corporation</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0">
-                Supervisor:
-                <div>
-                  <a href="https://www.linkedin.com/in/kunal-srivastava-20b603b/" target="_blank" rel="noopener">Kunal Srivastava</a>, Senior Manager, Raytheon Technologies
-                </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/soumalya-sarkar-12b90a3b/" target="_blank" rel="noopener">Soumalya Sarkar</a>, Principal Research Scientist, Raytheon Technologies
-                </div>
-
-                <div style="color: black;">
-                  Topic: Spatial Reasoning & 3D Understanding of Multi-Modal LLM (MLLM) for Engineering Design
-                </div>
-              </div>
-              <div class="text-muted exp-meta">
-                June 2025 –
-                
-                  September 2025
-                
-                  <span class="middot-divider"></span>
-                  <span>Team: Advanced Learning and Analytics, RTRC, East Hartford, CT </span>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" style="max-height: 56px; width: auto;" class="img-fluid d-block align-self-center"></a></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title my-0"> Teaching Assistant</div>
-              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.ece.iastate.edu/" target="_blank" rel="noopener">Department of Electrical and Computer Engineering, Iowa State University</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://www.engineering.iastate.edu/people/profile/vlthorl/" target="_blank" rel="noopener">Vicky Thorland-Oster</a></div>
-
-                <!--Class list -->
-              <div class="section-subheading card-title exp-company text-muted my-0">
-                Courses:
-                <ul style="margin-top: 0.3rem; margin-bottom: 0;">
-                  <li><a href="https://catalog.iastate.edu/azcourses/e_e/#:~:text=EE%205260%3A%20Deep%20Learning%3A%20Theory%20and%20Practice" target="_blank" rel="noopener">EE 526: Deep Learning: Theory and Practice</a></li>
-                  <li><a href="https://catalog.iastate.edu/azcourses/e_e/#:~:text=EE%204220%3A%20Communication%20Systems%20II" target="_blank" rel="noopener">EE 422: Communication System II</a></li>
-                  <li><a href="https://catalog.iastate.edu/previouscatalogs/2022-2023/azcourses/e_e/#:~:text=E%C2%A0E%C2%A0423%3A%20Communication%20Systems%20Laboratory" target="_blank" rel="noopener">EE 423: Communication System Lab</a></li>
-                  <li><a href="https://catalog.iastate.edu/previouscatalogs/2022-2023/azcourses/e_e/#:~:text=E%C2%A0E%C2%A0332%3A%20Semiconductor%20Materials%20and%20Devices" target="_blank" rel="noopener">EE 332: Semiconductor Materials & Devices</a></li>
-                </ul>
-              </div>
-
-              <div class="text-muted exp-meta">
-                Jan 2021 –
-                
-                  May 2021
-                
-                  <span class="middot-divider"></span>
-                  <span>Ames, IA </span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- <div class="row experience">
-    
-    <div class="col-auto text-center flex-column d-none d-sm-flex">
-      <div class="row h-50">
-        <div class="col border-right">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-      <div class="m-2">
-        <span class="badge badge-pill border ">&nbsp;</span>
-      </div>
-      <div class="row h-50">
-        <div class="col ">&nbsp;</div>
-        <div class="col">&nbsp;</div>
-      </div>
-    </div>
-    
-    <div class="col py-2">
-      <div class="card">
-        <div class="card-body">
-          <div class="d-flex align-content-start">
-            <div class="mr-2 mb-2"><a href="https://eee.buet.ac.bd/" target="_blank" rel="noopener"><img src="/media/icons/brands/buet.jpg" width="56px" height="56px" alt="Dept. of Electrical and Electronic Engineering, Bangladesh University of Engineering and Technology"></a></div>
-            <div>
-          
-
-              <div class="section-subheading card-title exp-title text-muted my-0">Undergraduate Research Student</div>
-              <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://eee.buet.ac.bd/" target="_blank" rel="noopener">Department of Electrical and Electronic Engineering, Bangladesh University of Engineering and Technology</a></div>
-              <div class="section-subheading card-title exp-company text-muted my-0">Supervisor: <a href="https://shamim-reza.webnode.page/" target="_blank" rel="noopener">Dr. Shamim Reza</a></div>
-              <div class="text-muted exp-meta">
-                Jan 2018 –
-                
-                  Dec 2020
-                
-
-                  <span class="middot-divider"></span>
-                  <span> Dhaka, Bangladesh</span>
-                
-              </div>
-            </div>
-          </div>
-          
-
-          
-        </div>
-      </div>
-    </div>
-  </div> -->
-  
-  
 </div>
 
 
-    
       </div>
-    
 
     </div>
   </section>
@@ -2251,7 +2117,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
 
   <div class="review-grid">
 
-    <div class="review-tile">
+    <div class="review-tile tint-iclr">
       <div class="review-info">
         <div class="review-name"><a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener">ICLR 2026</a></div>
         <span class="review-if conf">Conference</span>
@@ -2259,7 +2125,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-medical">
       <div class="review-info">
         <div class="review-name"><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener">Medical Image Analysis</a></div>
         <span class="review-if">IF: 11.8</span>
@@ -2267,7 +2133,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-ieee">
       <div class="review-info">
         <div class="review-name"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener">IEEE Trans. on Intelligent Transportation Systems</a></div>
         <span class="review-if">IF: 8.4</span>
@@ -2275,7 +2141,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-eaai">
       <div class="review-info">
         <div class="review-name"><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener">Engineering Applications of Artificial Intelligence</a></div>
         <span class="review-if">IF: 8.0</span>
@@ -2283,7 +2149,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-trd">
       <div class="review-info">
         <div class="review-name"><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener">Transportation Research Part D</a></div>
         <span class="review-if">IF: 7.7</span>
@@ -2291,7 +2157,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-pattern">
       <div class="review-info">
         <div class="review-name"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener">Pattern Recognition</a></div>
         <span class="review-if">IF: 7.6</span>
@@ -2299,7 +2165,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-neuro">
       <div class="review-info">
         <div class="review-name"><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener">Neurocomputing</a></div>
         <span class="review-if">IF: 6.5</span>
@@ -2307,7 +2173,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-cee">
       <div class="review-info">
         <div class="review-name"><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener">Computers and Electrical Engineering</a></div>
         <span class="review-if">IF: 4.9</span>
@@ -2315,7 +2181,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <div class="review-link"><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
     </div>
 
-    <div class="review-tile">
+    <div class="review-tile tint-digital">
       <div class="review-info">
         <div class="review-name"><a href="https://journals.sagepub.com/home/DHJ" target="_blank" rel="noopener">Digital Health</a></div>
         <span class="review-if">IF: 3.3</span>
