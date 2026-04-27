@@ -523,6 +523,155 @@
 #experience .row.experience {
   justify-content: center;
 }
+/* Peer Review tiles */
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.review-tile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+.review-tile:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transform: translateY(-2px);
+}
+.review-tile .review-info {
+  flex: 1;
+  min-width: 0;
+}
+.review-tile .review-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.3;
+}
+.review-tile .review-name a {
+  color: #1a1a2e;
+  text-decoration: none;
+}
+.review-tile .review-name a:hover {
+  color: #1565c0;
+}
+.review-tile .review-if {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fff;
+  background: #1565c0;
+  padding: 0.15rem 0.55rem;
+  border-radius: 12px;
+  margin-top: 0.3rem;
+}
+.review-tile .review-if.conf {
+  background: #6a1b9a;
+}
+.review-tile .review-link {
+  flex-shrink: 0;
+}
+.review-tile .review-link a {
+  color: #1565c0;
+  font-size: 1.1rem;
+}
+/* Leadership cards */
+.leadership-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.leadership-card {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+.leadership-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.leadership-card .lead-logo {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.15rem;
+}
+.leadership-card .lead-logo img {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+.leadership-card .lead-body {
+  flex: 1;
+  min-width: 0;
+}
+.leadership-card .lead-title {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+}
+.leadership-card .lead-org {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+.leadership-card .lead-org a {
+  color: #1565c0;
+  text-decoration: none;
+}
+.leadership-card .lead-org a:hover {
+  text-decoration: underline;
+}
+.leadership-card .lead-tasks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.leadership-card .lead-tasks li {
+  font-size: 0.88rem;
+  color: #444;
+  padding: 0.2rem 0 0.2rem 1.2rem;
+  position: relative;
+  line-height: 1.5;
+}
+.leadership-card .lead-tasks li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #1565c0;
+  font-size: 0.75rem;
+  top: 0.35rem;
+}
+#service .container,
+#leadership .container {
+  max-width: 1100px;
+}
+@media (max-width: 768px) {
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+  .leadership-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .leadership-card .lead-tasks li {
+    text-align: left;
+  }
+}
 @media (max-width: 768px) {
   .pub-card {
     flex-direction: column;
@@ -778,6 +927,10 @@
 
         <li class="nav-item">
           <a class="nav-link " href="/#service" data-target="#service"><span>Service</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#leadership" data-target="#leadership"><span>Leadership</span></a>
         </li>
 
         
@@ -2033,13 +2186,13 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
    <div class="home-section-bg " ></div>
     <div class="container">
 
-    
+
       <div class="row  ">
-      
-        
-          <div class="section-heading col-12 col-lg-4 mb-3 mb-lg-0 d-flex flex-column align-items-center align-items-lg-start">
+
+
+          <div class="section-heading col-12 mb-3 d-flex flex-column align-items-center align-items-lg-start">
             <h1 class="mb-0">Services</h1>
-            
+
           </div>
         
       
@@ -2092,207 +2245,220 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
 
 
 
-<div class="col-12 col-lg-8">
+<div class="col-12">
 
-  <h2 id="journal-reviewer">Peer Reviewer</h2>
-<ul>
-<li>
-<p><a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener">ICLR 2026</p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener">Pattern Recognition</a> (Impact factor 7.6)</a></p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener">Medical Image Analysis</a> (Impact factor 11.8)</a></p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener">Engineering Applications of Artificial Intelligence</a> (Impact factor 8.0)</a></p>
-</li>
-<li>
-<p><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener">IEEE Transactions on Intelligent Transportation Systems</a> (Impact factor 8.4)</a></p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener">Transportation Research Part D: Transport and Environment</a> (Impact factor 7.7)</a></p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener">Neurocomputing</a> (Impact factor 6.5)</a></p>
-</li>
-<li>
-<p><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener">Computers and Electrical Engineering</a> (Impact factor 4.9)</a></p>
-</li>
-<li>
-<p><a href="https://journals.sagepub.com/home/DHJ" target="_blank" rel="noopener">Digital Health</a>, (Impact factor 3.3) </a></p>
-</li>
-</ul>
+  <h2 id="journal-reviewer" style="margin-bottom: 1rem;">Peer Reviewer</h2>
 
+  <div class="review-grid">
 
-<!-- <h2 id="organizing-committees">Leadership Positions</h2>
-<ul>
-<li>
-<p>Serving as the Assistant Secretary of <a href="https://www.stuorg.iastate.edu/goecpe/information" target="_blank" rel="noopener">ISU Graduate Organization of Electrical and Computer Engineering (GOECpE)</a> to foster social interactions and assist in
-professional development of the Iowa State Electrical and Computer Engineering students</p>
-</li>
-<li>
-<p>Organized fundraising initiatives for the student engagement events hosted by the <a href="https://studentengagement.iastate.edu/" target="_blank" rel="noopener">Iowa State Student Engagement</a> as the Assistant Secretary of GOECpE</p>
-</li>
-<li>
-<p>Served as a Graduate member of <a href="https://hkn.ece.iastate.edu/" target="_blank" rel="noopener">ISU IEEE-HKN: Nu Chapter</a> to hold helproom sessions and weekly discussions for undergraduate students</p>
-</li>
-<li>
-<p>Held student member role in <a href="https://www.stuorg.iastate.edu/ieee-iastate/information" target="_blank" rel="noopener">IEEE at Iowa State</a> (2011-22) and participated in industry sessions, tech events, exhibits, projects, educational outreach, etc.</p>
-</li>
-<li>
-<p>Actively participated and arranged programs/cultural events as a volunteer of <a href="https://www.stuorg.iastate.edu/bangladesh" target="_blank" rel="noopener">ISU Bangladesh Student Association</a></p>
-</li>
-<li>
-<p>Volunteered and donated blood in <a href="https://www.redcross.org/local/iowa.html#:~:text=The%20American%20Red%20Cross%20Iowa,South%20Dakota%2C%20Wisconsin%20and%20Illinois." target="_blank" rel="noopener">American Red Cross Iowa Region</a></p>
-</li>
-</ul> -->
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener">ICLR 2026</a></div>
+        <span class="review-if conf">Conference</span>
+      </div>
+      <div class="review-link"><a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-<h2 id="organizing-committees">Leadership Positions</h2>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener">Medical Image Analysis</a></div>
+        <span class="review-if">IF: 11.8</span>
+      </div>
+      <div class="review-link"><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-<ul>
-    <li>
-        <p>Assistant Secretary of <a href="https://www.stuorg.iastate.edu/goecpe/information" target="_blank" rel="noopener">Graduate Organization of Electrical and Computer Engineering(GOECpE)</a>, Iowa State</p>
-        <ul>
-            <li>Fostered social interactions and professional development among Iowa State Electrical and Computer Engineering students</li>
-            <li>Organized fundraising initiatives for student engagement events</li>
-            <li>Coordinated workshops and seminars to enhance student skill sets and networking opportunities</li>
-        </ul>
-    </li>
-    
-    <li>
-      <p>Senator of <a href="https://www.gpss.iastate.edu/" target="_blank" rel="noopener">Graduate and Professional Student Senate(GPSS)</a>, Iowa State</p>
-      <ul>
-          <li>Elected to Student Government by the Iowa State graduate student body</li>
-          <li>Represented the graduate and professional student body as a whole on the Student Government</li>
-          <li>Developed and disseminated ideas for the improvement of graduate and professional education at Iowa State</li>
-      </ul>
-    </li>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener">IEEE Trans. on Intelligent Transportation Systems</a></div>
+        <span class="review-if">IF: 8.4</span>
+      </div>
+      <div class="review-link"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-    <li>
-      <p>Ambassador of <a href="https://isso.dso.iastate.edu/get-involved/cultural-ambassador-program" target="_blank" rel="noopener">Cultural Ambassador Program(CAP)</a>, Iowa State International Students and Scholars Office</p>
-      <ul>
-          <li>Facilitated meaningful cross-cultural connections, bridging international and U.S. students based on shared interests</li>
-          <li>Developed cross-cultural skills and community inclusive skills</li>
-          <li>Enriched the understanding of diverse perspectives while supporting others in their journey of cultural exploration</li>
-      </ul>
-    </li>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener">Engineering Applications of Artificial Intelligence</a></div>
+        <span class="review-if">IF: 8.0</span>
+      </div>
+      <div class="review-link"><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-    <li>
-        <p>Graduate Member of <a href="https://hkn.ece.iastate.edu/" target="_blank" rel="noopener">Iowa State IEEE-HKN: Nu Chapter</a></p>
-        <ul>
-            <li>Conducted helproom sessions to support undergraduate students in their academic challenges</li>
-            <li>Led weekly discussions to foster a collaborative learning environment</li>
-        </ul>
-    </li>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener">Transportation Research Part D</a></div>
+        <span class="review-if">IF: 7.7</span>
+      </div>
+      <div class="review-link"><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-    <li>
-        <p>Student Member of <a href="https://www.stuorg.iastate.edu/ieee-iastate/information" target="_blank" rel="noopener">IEEE at Iowa State</a> (2011-22)</p>
-        <ul>
-            <li>Participated in industry sessions, tech events, and exhibits to broaden technical knowledge</li>
-            <li>Contributed to educational outreach programs to inspire future engineers</li>
-        </ul>
-    </li>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener">Pattern Recognition</a></div>
+        <span class="review-if">IF: 7.6</span>
+      </div>
+      <div class="review-link"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-    <li>
-        <p>Volunteer at <a href="https://www.stuorg.iastate.edu/bangladesh" target="_blank" rel="noopener">Iowa State Bangladesh Student Association</a></p>
-        <ul>
-            <li>Assisted in the planning and execution of community events and cultural celebrations</li>
-            <li>Supported new members by providing resources and guidance for onboarding to Iowa State</li>
-        </ul>
-    </li>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener">Neurocomputing</a></div>
+        <span class="review-if">IF: 6.5</span>
+      </div>
+      <div class="review-link"><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-    <li>
-        <p>Volunteer at <a href="https://www.redcross.org/local/iowa.html#:~:text=The%20American%20Red%20Cross%20Iowa,South%20Dakota%2C%20Wisconsin%20and%20Illinois." target="_blank" rel="noopener">American Red Cross Iowa Region</a></p>
-        <ul>
-            <li>Donated blood regularly to support local hospitals and emergency response needs at Iowa State</li>
-            <li>Volunteered at blood drives and assisting in community outreach efforts</li>
-        </ul>
-    </li>
-</ul>
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener">Computers and Electrical Engineering</a></div>
+        <span class="review-if">IF: 4.9</span>
+      </div>
+      <div class="review-link"><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
+    <div class="review-tile">
+      <div class="review-info">
+        <div class="review-name"><a href="https://journals.sagepub.com/home/DHJ" target="_blank" rel="noopener">Digital Health</a></div>
+        <span class="review-if">IF: 3.3</span>
+      </div>
+      <div class="review-link"><a href="https://journals.sagepub.com/home/DHJ" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i></a></div>
+    </div>
 
-<h2 id="invited-talks">Invited Talks</h2>
-<ul>
-<li>
-<p>"An overview of Vision-Language models." at <a href="https://trac-ai.iastate.edu/" target="_blank" rel="noopener">Translational AI Center (TrAC)</a>, Department of Mechanical Engineering, Iowa State University, Ames, IA (Nov 16th , 2022).</p>
-</li>
-<li>
-<p>"When and why vision-language models behave like bags-of-words, and what to do about it?" at <a href="https://trac-ai.iastate.edu/event/student-journal-club-tbd/" target="_blank" rel="noopener">Student Journal Club: TrAC</a>, Iowa State University, Ames, IA (2023).</p>
-</li>
-</ul>
+  </div>
 
-<!-- ## Journal Reviewer
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> TSE
-Serving as the reviewer for [IEEE Transactions on Software Engineering (TSE)](https://www.computer.org/csdl/journal/ts).
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> TOSEM
-Serving as a reviewer for [ACM Transactions on Software Engineering and Methodology (TOSEM)](https://dl.acm.org/journal/tosem).
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> EMSE
-Serving as a reviewer for Springer Journal - [Empirical Software Engineering (EMSE)](https://www.springer.com/journal/10664).
-
-
-## Conference Program Committees
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> PC Member @ ASE'22
-Served as the Program Committee member of [Industry Showcase](https://conf.researchr.org/track/ase-2022/ase-2022-industry-showcase) track of ASE 2022.
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> PC Member @ ASE'22
-Served as the Program Committee member of [Late Breaking Results](https://conf.researchr.org/committee/ase-2022/ase-2022-late-breaking-results-program-committee) track of ASE 2022.
-
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> PC Member @ ESEC/FSE'22
-Serving as the Program Committee member of [Doctoral Symposium](https://2022.esec-fse.org/committee/fse-2022-doctoral-symposium-program-committee) track of ESEC/FSE 2022.
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> Artifact Evaluation Committee @ OOPSLA'21 
-Served in the program committee of [artifact track](https://2021.splashcon.org/committee/splash-2021-Artifacts-artifact-evaluation-committee) of ACM SIGPLAN conference on Object-Oriented Programming, Systems, Languages & Applications ([OOPSLA'21](https://2021.splashcon.org/track/splash-2021-oopsla)) co-located at SPLASH 2021, Chicago, IL.
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> Shadow PC Member @ MSR'21
-Served as the [shadow program committee member](https://2021.msrconf.org/committee/msr-2021-shadow-pc-shadow-pc-committee) at the International Conference on Mining Software Repositories ([MSR 2021](https://2021.msrconf.org/)), co-located with ICSE'21, Madrid, Spain.
-
-## Organizing Committees
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> Accessibility Chair @ SPLASH'20-21
-Served the organizing committee of ACM SIGPLAN conference on Systems, Programming, Languages, and Applications ([SPLASH 2020](https://2020.splashcon.org/committee/splash-2020-organizing-committee) and [SPLASH 2021](https://2021.splashcon.org/committee/splash-2021-organizing-committee)) with OOPSLA, ECOOP and REBASE in Chicago, IL.
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> Web Chair @ Midwest Big Data Summer School
-Served in the [organizing committee](https://tads.research.iastate.edu/organizers) of the Midwest Big Data Summer School 2021 in Ames, IA, United States.
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> WiDS Ambassador
-Served as the WiDS Ambassador (Women in Data Science) to organize and promote [ISU event](https://www.cs.iastate.edu/wids-ames) as part of the annual [WiDS Worldwide Conference](https://www.widsconference.org/ambassadors-2022.html) organized by Stanford University.
-
-#### 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> Panelist @ ESEC/FSE'20
-Served the [panel discussion](https://2020.esec-fse.org/details/esecfse-2020-paper-presentations/16/Conversations-on-Fairness/) of the session on Fairness at ACM [ESEC/FSE 2020](https://2020.esec-fse.org/) in Sacramento, CA. -->
-<!-- 
-  <i class="fas fa-calendar-alt  pr-1 fa-fw"></i> **Vice Chair @ IEEE Student Branch:** I served as the vice chair of the IEEE Student Branch in Jahangirnagar University, Dhaka, Bangladesh in 2015. -->
-
-  
-
-  
-  
-  
+  <h2 id="invited-talks" style="margin-top: 2rem; margin-bottom: 1rem;">Invited Talks</h2>
+  <ul>
+    <li><p>"An overview of Vision-Language models." at <a href="https://trac-ai.iastate.edu/" target="_blank" rel="noopener">Translational AI Center (TrAC)</a>, Department of Mechanical Engineering, Iowa State University, Ames, IA (Nov 16th, 2022).</p></li>
+    <li><p>"When and why vision-language models behave like bags-of-words, and what to do about it?" at <a href="https://trac-ai.iastate.edu/event/student-journal-club-tbd/" target="_blank" rel="noopener">Student Journal Club: TrAC</a>, Iowa State University, Ames, IA (2023).</p></li>
+  </ul>
 
 </div>
 
 
-    
       </div>
-    
+
+
+    </div>
+  </section>
+
+
+  <section id="leadership" class="home-section wg-pages  "  >
+   <div class="home-section-bg " ></div>
+    <div class="container">
+
+      <div class="row  ">
+
+          <div class="section-heading col-12 mb-3 d-flex flex-column align-items-center align-items-lg-start">
+            <h1 class="mb-0">Leadership Positions</h1>
+          </div>
+
+<div class="col-12">
+  <div class="leadership-grid">
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="GOECpE">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Assistant Secretary</div>
+        <div class="lead-org"><a href="https://www.stuorg.iastate.edu/goecpe/information" target="_blank" rel="noopener">Graduate Organization of Electrical and Computer Engineering (GOECpE)</a>, Iowa State</div>
+        <ul class="lead-tasks">
+          <li>Fostered social interactions and professional development among Iowa State ECE students</li>
+          <li>Organized fundraising initiatives for student engagement events</li>
+          <li>Coordinated workshops and seminars to enhance student skill sets and networking opportunities</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="GPSS">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Senator</div>
+        <div class="lead-org"><a href="https://www.gpss.iastate.edu/" target="_blank" rel="noopener">Graduate and Professional Student Senate (GPSS)</a>, Iowa State</div>
+        <ul class="lead-tasks">
+          <li>Elected to Student Government by the Iowa State graduate student body</li>
+          <li>Represented the graduate and professional student body as a whole on the Student Government</li>
+          <li>Developed and disseminated ideas for the improvement of graduate and professional education</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="CAP">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Ambassador</div>
+        <div class="lead-org"><a href="https://isso.dso.iastate.edu/get-involved/cultural-ambassador-program" target="_blank" rel="noopener">Cultural Ambassador Program (CAP)</a>, Iowa State International Students and Scholars Office</div>
+        <ul class="lead-tasks">
+          <li>Facilitated meaningful cross-cultural connections, bridging international and U.S. students</li>
+          <li>Developed cross-cultural skills and community inclusive skills</li>
+          <li>Enriched understanding of diverse perspectives while supporting cultural exploration</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="IEEE-HKN">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Graduate Member</div>
+        <div class="lead-org"><a href="https://hkn.ece.iastate.edu/" target="_blank" rel="noopener">Iowa State IEEE-HKN: Nu Chapter</a></div>
+        <ul class="lead-tasks">
+          <li>Conducted helproom sessions to support undergraduate students in academic challenges</li>
+          <li>Led weekly discussions to foster a collaborative learning environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="IEEE">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Student Member</div>
+        <div class="lead-org"><a href="https://www.stuorg.iastate.edu/ieee-iastate/information" target="_blank" rel="noopener">IEEE at Iowa State</a> (2021&ndash;22)</div>
+        <ul class="lead-tasks">
+          <li>Participated in industry sessions, tech events, and exhibits to broaden technical knowledge</li>
+          <li>Contributed to educational outreach programs to inspire future engineers</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="BSA">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Volunteer</div>
+        <div class="lead-org"><a href="https://www.stuorg.iastate.edu/bangladesh" target="_blank" rel="noopener">Iowa State Bangladesh Student Association</a></div>
+        <ul class="lead-tasks">
+          <li>Assisted in planning and execution of community events and cultural celebrations</li>
+          <li>Supported new members by providing resources and guidance for onboarding</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="leadership-card">
+      <div class="lead-logo">
+        <img src="/media/icons/brands/isu3.png" alt="Red Cross">
+      </div>
+      <div class="lead-body">
+        <div class="lead-title">Volunteer</div>
+        <div class="lead-org"><a href="https://www.redcross.org/local/iowa.html" target="_blank" rel="noopener">American Red Cross Iowa Region</a></div>
+        <ul class="lead-tasks">
+          <li>Donated blood regularly to support local hospitals and emergency response needs</li>
+          <li>Volunteered at blood drives and assisted in community outreach efforts</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      </div>
 
     </div>
   </section>
