@@ -447,6 +447,77 @@
 
 
   <title>Md Zahid Hasan</title>
+
+<style>
+/* Publication visual cards */
+.pub-card {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background: #fff;
+  transition: box-shadow 0.2s ease;
+}
+.pub-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.pub-card-img {
+  flex: 0 0 240px;
+  max-width: 240px;
+  align-self: center;
+}
+.pub-card-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+}
+.pub-card-body {
+  flex: 1;
+  min-width: 0;
+}
+.pub-card-body .pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+}
+.pub-card-body .pub-title a {
+  color: #1a1a2e;
+  text-decoration: none;
+}
+.pub-card-body .pub-title a:hover {
+  color: #1565c0;
+}
+.pub-card-body .pub-authors {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+  line-height: 1.5;
+}
+.pub-card-body .pub-venue {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+.pub-card-body .btn-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+@media (max-width: 768px) {
+  .pub-card {
+    flex-direction: column;
+  }
+  .pub-card-img {
+    flex: none;
+    max-width: 100%;
+  }
+}
+</style>
 </head>
 
 
@@ -1674,507 +1745,227 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
 <!-- Category: Driving Analysis & Cognitive Health -->
 <h3 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; margin-top: 0.5rem; color: #333;">Driving Analysis &amp; Cognitive Health</h3>
 
-  <div class="pub-list-item" style="margin-bottom: 1rem">
-    <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-  
-    
-    
-  
-    <span class="article-metadata li-cite-author">
-      
-  
-    <span class="author-highlighted" style="color: #000001;">
-        Md Zahid Hasan</span>, <span >
-        Jiajing Chen</span>, <span >
-        Jiyang Wang</span>, <span >
-        Mohammed Shaiqur Rahman</span>, <span >
-        Ameya Joshi</span>, <span >
-        Senem Velipasalar</span>, <span >
-        Chinmay Hegde</span>, <span >
-        Anuj Sharma</span>, <span >
-        Soumik Sarkar</span>
-  
-    </span>
-    <div> 
+<!-- IEEE TITS 2024 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="IEEE TITS 2024">
+  </div>
+  <div class="pub-card-body">
+    <div class="pub-title">
       <a href="https://doi.org/10.1109/TITS.2024.3381175" target="_blank" rel="noopener noreferrer">Vision-Language Models Can Identify Distracted Driver Behavior From Naturalistic Videos</a>
     </div>
-    IEEE Transactions on Intelligent Transportation Systems, 2024.
-    
-    <div class="btn-links">
-      
-  
-  
-  
-  
-  
-  
-  
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/zahid-isu/DriveCLIP" target="_blank" rel="noopener">
-    <i class="fab fa-github mr-1"></i>
-  </a>
-
-  <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-          data-filename="/publication/ieee24/cite.bib">
-    <i class="fas fa-quote-right mr-1"></i>
-  </a>
-  
+    <div class="pub-authors">
+      <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Jiajing Chen, Jiyang Wang, Mohammed Shaiqur Rahman, Ameya Joshi, Senem Velipasalar, Chinmay Hegde, Anuj Sharma, Soumik Sarkar
     </div>
-    
+    <div class="pub-venue">IEEE Transactions on Intelligent Transportation Systems, 2024.</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/zahid-isu/DriveCLIP" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/ieee24/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
+</div>
   
   
 
-<!-- AAIC2023 Paper -->
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Guillermo Basulto-Elias</span>, <span >
-      Russell Kai Liang Tan</span>, <span >
-      Jun Ha Chang</span>, <span >
-      Soumik Sarkar</span>, <span >
-      Anuj Sharma</span>, <span >
-      Shauna Hallmark</span>, <span >
-      Matthew Rizzo</span>, <span >
-      Jennifer Merickel </span>
-
-  </span>
-  <div> 
-    <a href=" https://doi.org/10.1002/alz.075742" target="_blank" rel="noopener noreferrer">Roadway weather challenges illuminate real-world driving biomarkers of dementia risk</a>
+<!-- AAIC 2023 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="AAIC 2023">
   </div>
-  Alzheimer's & Dementia (2023)
-  
-  <div class="btn-links">
-    
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://doi.org/10.1002/alz.075742" target="_blank" rel="noopener noreferrer">Roadway weather challenges illuminate real-world driving biomarkers of dementia risk</a>
+    </div>
+    <div class="pub-authors">
+      <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Guillermo Basulto-Elias, Russell Kai Liang Tan, Jun Ha Chang, Soumik Sarkar, Anuj Sharma, Shauna Hallmark, Matthew Rizzo, Jennifer Merickel
+    </div>
+    <div class="pub-venue">Alzheimer's &amp; Dementia (2023)</div>
+    <div class="btn-links">
 
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/17jiAS6bnap5AyUYwX077bf0VgFpVxNi3/view?usp=sharing" target="_blank" rel="noopener">
-  <i class="fas fa-image mr-1"></i>
-</a>
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/zahid-isu/roadweather_dockerization.git" target="_blank" rel="noopener">
-  <i class="fab fa-github mr-1"></i>
-</a>
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1mMxChMz9QX-JYvwBompce753f6wfZdld/view?usp=sharing" target="_blank" rel="noopener">
-  <i class="fas fa-certificate mr-1"></i>
-</a>
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/aaic23/cite.bib">
-  <i class="fas fa-quote-right mr-1"></i>
-</a>
-
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/17jiAS6bnap5AyUYwX077bf0VgFpVxNi3/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-image mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/zahid-isu/roadweather_dockerization.git" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1mMxChMz9QX-JYvwBompce753f6wfZdld/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-certificate mr-1"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/aaic23/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
-  
-
-  
 </div>
 
-
-
-
-<!-- DiveCLIP2022 paper -->
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Ameya Joshi</span>, <span >
-      Mohammed Rahman</span>, <span >
-      Archana Venkatachelapathy</span>, <span >
-      Chinmay Hegde</span>, <span >
-      Anuj Sharma</span>, <span >
-      Soumik Sarkar</span>
-  </span>
-  <div> 
-    <a href="/publication/neurips22/">DriveCLIP: Zero-shot transfer for distracted driving activity understanding using CLIP</a>
+<!-- NeurIPS 2022 DriveCLIP -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/neurips22/feature.jpeg" alt="DriveCLIP Architecture">
   </div>
-  36th Conference on Neural Information Processing Systems (<strong>NeurIPS 2022</strong>) Workshop on Machine Learning for Autonomous Driving, New Orleans, LA, 2022.
-
-  
-  <div class="btn-links">
-    
-
-
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ml4ad.github.io/files/papers2022/DriveCLIP:%20Zero-Shot%20Transfer%20for%20Distracted%20Driving%20Activity%20Understanding%20using%20CLIP.pdf" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-</a>
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Zahid-isu/DriveCLIP" target="_blank" rel="noopener">
-  <i class="fab fa-github mr-1"></i>
-</a>
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59794.png?t=1669450411.750494" target="_blank" rel="noopener">
-  <i class="fas fa-image mr-1"></i>
-</a>
-  
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/neurips22/cite.bib">
-  <i class="fas fa-quote-right mr-1"></i>
-</a>
-
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="/publication/neurips22/">DriveCLIP: Zero-shot transfer for distracted driving activity understanding using CLIP</a>
+    </div>
+    <div class="pub-authors">
+      <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Ameya Joshi, Mohammed Rahman, Archana Venkatachelapathy, Chinmay Hegde, Anuj Sharma, Soumik Sarkar
+    </div>
+    <div class="pub-venue">36th Conference on Neural Information Processing Systems (<strong>NeurIPS 2022</strong>) Workshop on Machine Learning for Autonomous Driving, New Orleans, LA, 2022.</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ml4ad.github.io/files/papers2022/DriveCLIP:%20Zero-Shot%20Transfer%20for%20Distracted%20Driving%20Activity%20Understanding%20using%20CLIP.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/Zahid-isu/DriveCLIP" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://nips.cc/media/PosterPDFs/NeurIPS%202022/59794.png?t=1669450411.750494" target="_blank" rel="noopener"><i class="fas fa-image mr-1"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/neurips22/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
-  
-
-  
 </div>
 
-
-<!-- RWR Weather paper 2024 -->
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-    <span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Guillermo Basulto-Elias</span>, <span >
-      Shauna Hallmark</span>, <span >
-      Jun Ha Chang</span>, <span >
-      Anuj Sharma</span>, <span >
-      Jeffrey D. Dawson </span>
-      Soumik Sarkar</span>, <span >
-      Matthew Rizzo</span>
-
-  </span>
-  <div> 
-    <a href="https://www.scirp.org/journal/paperabs?paperid=140143">Classifying Cognitive Decline in Older Drivers from Behavior on Adverse Roads Detected Using Computer Vision</a>
+<!-- JTT 2025 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="JTT 2025">
   </div>
-  Journal of Transportation Technologies, 2025.
-
-  
-  <div class="btn-links">
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://www.scirp.org/journal/paperabs?paperid=140143">Classifying Cognitive Decline in Older Drivers from Behavior on Adverse Roads Detected Using Computer Vision</a>
+    </div>
+    <div class="pub-authors">
+      <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Guillermo Basulto-Elias, Shauna Hallmark, Jun Ha Chang, Anuj Sharma, Jeffrey D. Dawson, Soumik Sarkar, Matthew Rizzo
+    </div>
+    <div class="pub-venue">Journal of Transportation Technologies, 2025.</div>
+    <div class="btn-links">
+    </div>
   </div>
-  
 </div>
 
-<!-- DDT paper 2025 -->
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-    <span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Guillermo Basulto-Elias</span>, <span >
-      Jun Ha Chang</span>, <span >
-      Shauna Hallmark</span>, <span >
-      Matthew Rizzo</span>, <span >
-      Anuj Sharma</span>, <span >
-      Soumik Sarkar</span>
-
-  </span>
-  <div> 
-    <a href="https://arxiv.org/abs/2507.05463">Driving as a Diagnostic Tool: Scenario-based Cognitive Assessment in Older Drivers from Driving Video</a>
+<!-- DDT paper (Under review) -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="DDT 2025">
   </div>
-  (Under review)
-  
-  <div class="btn-links">
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://arxiv.org/abs/2507.05463">Driving as a Diagnostic Tool: Scenario-based Cognitive Assessment in Older Drivers from Driving Video</a>
+    </div>
+    <div class="pub-authors">
+      <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Guillermo Basulto-Elias, Jun Ha Chang, Shauna Hallmark, Matthew Rizzo, Anuj Sharma, Soumik Sarkar
+    </div>
+    <div class="pub-venue">(Under review)</div>
+    <div class="btn-links">
+    </div>
   </div>
-  
 </div>
-
 
 <!-- Category: Autonomous Systems & Safety -->
 <h3 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; margin-top: 1.5rem; color: #333;">Autonomous Systems &amp; Safety</h3>
 
-<!-- ICCPS paper 2025 -->
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-
-
-
-  <span class="article-metadata li-cite-author">
-
-
-    <span>
-      Joshua R. Waite</span>,<span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Qisai Liu</span>, <span >
-      Chinmay Hegde</span>, <span >
-      Soumik Sarkar</span>
-  </span>
-  <div>
-    <a href="https://doi.org/10.1145/3716550.3722033">RLS3: RL-Based Synthetic Sample Selection to Enhance Spatial Reasoning in Vision-Language Models for Indoor Autonomous Perception</a>
+<!-- ICCPS 2025 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="ICCPS 2025">
   </div>
-  16th ACM/IEEE International Conference on Cyber-Physical Systems (<strong>ICCPS 2025</strong>), Irvine, CA, 2025.
-
-
-  <div class="btn-links">
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3716550.3722033" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-</a>
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://zahid-isu.github.io/rls3/" target="_blank" rel="noopener">
-  <i class="fas fa-globe mr-1"></i>
-</a>  
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/iccps25/cite.bib">
-  <i class="fas fa-quote-right mr-1"></i>
-</a>
-
-
-
-
-    
-  
-<!-- <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1SFSSwwjxJZxENuiROAXCvZyC2cjaRelW/view?usp=sharing" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-  Poster
-</a>
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://drive.google.com/file/d/1komsOMSlZPNO5twiwN0wXLK2Y8xZ-wfq/view?usp=sharing" target="_blank" rel="noopener">
-  Certificate
-</a> -->
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://doi.org/10.1145/3716550.3722033">RLS3: RL-Based Synthetic Sample Selection to Enhance Spatial Reasoning in Vision-Language Models for Indoor Autonomous Perception</a>
+    </div>
+    <div class="pub-authors">
+      Joshua R. Waite, <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Qisai Liu, Chinmay Hegde, Soumik Sarkar
+    </div>
+    <div class="pub-venue">16th ACM/IEEE International Conference on Cyber-Physical Systems (<strong>ICCPS 2025</strong>), Irvine, CA, 2025.</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1145/3716550.3722033" target="_blank" rel="noopener"><i class="fas fa-file-pdf mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://zahid-isu.github.io/rls3/" target="_blank" rel="noopener"><i class="fas fa-globe mr-1"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/iccps25/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
-  
-
-  
 </div>
 
-<!-- GENESISRL24 paper -->
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span>
-    Hsin-Jung Yang</span>, <span>
-    Joe Beck</span>,  <span class="author-highlighted" style="color: #000001;">
-    Md Zahid Hasan</span>,<span>
-    Ekin Beyazit</span>, <span>
-    Subhadeep Chakraborty</span>, <span>
-    Tichakorn Wongpiromsarn</span>, <span>
-    Soumik Sarkar</span>
-  </span>
-  <div> 
-    <a href="https://ieeexplore.ieee.org/document/10786471">GENESIS-RL: GEnerating Natural Edge-cases with Systematic Integration of Safety considerations and Reinforcement Learning</a>
+<!-- GENESIS-RL 2024 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="GENESIS-RL 2024">
   </div>
-  2024 IEEE International Automated Vehicle Validation Conference (<strong>IAVVC 2024</strong>), Pittsburgh, PA, 2024.
-
-  
-  <div class="btn-links">
-    
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/IAVVC63304.2024.10786471" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-</a>
-
-
-
-
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://hjy77.github.io/GENESIS-RL/" target="_blank" rel="noopener">
-    <i class="fas fa-globe mr-1"></i>
-</a>  
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/genesisrl24/cite.bib">
-  <i class="fas fa-quote-right mr-1"></i>
-</a>
-
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://ieeexplore.ieee.org/document/10786471">GENESIS-RL: GEnerating Natural Edge-cases with Systematic Integration of Safety considerations and Reinforcement Learning</a>
+    </div>
+    <div class="pub-authors">
+      Hsin-Jung Yang, Joe Beck, <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Ekin Beyazit, Subhadeep Chakraborty, Tichakorn Wongpiromsarn, Soumik Sarkar
+    </div>
+    <div class="pub-venue">2024 IEEE International Automated Vehicle Validation Conference (<strong>IAVVC 2024</strong>), Pittsburgh, PA, 2024.</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1109/IAVVC63304.2024.10786471" target="_blank" rel="noopener"><i class="fas fa-file-pdf mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://hjy77.github.io/GENESIS-RL/" target="_blank" rel="noopener"><i class="fas fa-globe mr-1"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/genesisrl24/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
-  
-
-  
 </div>
-
-
 
 <!-- Category: Optimization & Foundations -->
 <h3 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; margin-top: 1.5rem; color: #333;">Optimization &amp; Foundations</h3>
 
-<!-- TMLR paper 2025 -->
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  <span class="article-metadata li-cite-author">
-
-    <span>
-      Zhanhong Jiang</span>,<span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Nastaran Saadati</span>, <span >
-      Aditya Balu</span>, <span >
-      Chao Liu</span>, <span >
-      Soumik Sarkar</span>
-  </span>
-  <div>
-    <a href="https://openreview.net/pdf?id=u6OSRdkAwl">Balancing Utility and Privacy: Dynamically Private SGD with Random Projection</a>
+<!-- TMLR 2025 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="TMLR 2025">
   </div>
-   Transactions on Machine Learning Research (<strong>TMLR 2025</strong>)
-
-  <div class="btn-links">
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://openreview.net/pdf?id=u6OSRdkAwl" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-</a>
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://openreview.net/pdf?id=u6OSRdkAwl">Balancing Utility and Privacy: Dynamically Private SGD with Random Projection</a>
+    </div>
+    <div class="pub-authors">
+      Zhanhong Jiang, <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Nastaran Saadati, Aditya Balu, Chao Liu, Soumik Sarkar
+    </div>
+    <div class="pub-venue">Transactions on Machine Learning Research (<strong>TMLR 2025</strong>)</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://openreview.net/pdf?id=u6OSRdkAwl" target="_blank" rel="noopener"><i class="fas fa-file-pdf mr-1"></i></a>
+    </div>
   </div>
-
 </div>
 
-<!-- IEEE CAI paper 2025 -->
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  <span class="article-metadata li-cite-author">
-
-    <span>
-      Zhanhong Jiang</span>,<span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span >
-      Aditya Balu</span>, <span >
-      Joshua R Waite</span>, <span >
-      Genyi Huang</span>, <span >
-      Soumik Sarkar</span>
-  </span>
-  <div>
-    <a href="https://doi.org/10.1109/CAI64502.2025.00140">FUSE: First-Order and Second-Order Unified SynthEsis in Stochastic Optimization</a>
+<!-- IEEE CAI 2025 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="IEEE CAI 2025">
   </div>
-   IEEE Conference on Artificial Intelligence (<strong>IEEE CAI 2025</strong>), Santa Clara, CA, 2025.
-
-  <div class="btn-links">
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2503.04204" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-</a>
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/fuse25/cite.bib">
-  <i class="fas fa-quote-right mr-1"></i>
-</a>
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://doi.org/10.1109/CAI64502.2025.00140">FUSE: First-Order and Second-Order Unified SynthEsis in Stochastic Optimization</a>
+    </div>
+    <div class="pub-authors">
+      Zhanhong Jiang, <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Aditya Balu, Joshua R Waite, Genyi Huang, Soumik Sarkar
+    </div>
+    <div class="pub-venue">IEEE Conference on Artificial Intelligence (<strong>IEEE CAI 2025</strong>), Santa Clara, CA, 2025.</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://arxiv.org/abs/2503.04204" target="_blank" rel="noopener"><i class="fas fa-file-pdf mr-1"></i></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/fuse25/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
-
 </div>
 
 <!-- Category: Datasets & Benchmarks -->
 <h3 style="border-bottom: 2px solid #e0e0e0; padding-bottom: 0.3rem; margin-bottom: 1rem; margin-top: 1.5rem; color: #333;">Datasets &amp; Benchmarks</h3>
 
-<!-- BioTrove 2024 Paper -->
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  <span class="article-metadata li-cite-author">
-
-    <span>
-      Chih-Hsuan Yang*</span>, <span>
-      Benjamin Feuer*</span>, <span>
-      Talukder Zaki Jubery</span>, <span>
-      Zi K. Deng</span>, <span>
-      Andre Nakkab</span>, <span class="author-highlighted" style="color: #000001;">
-      Md Zahid Hasan</span>, <span>
-      Shivani Chiranjeevi</span>, <span>
-      Kelly O. Marshall</span>, <span>
-      Nirmal Baishnab</span>, <span>
-      Asheesh K Singh</span>, <span>
-      Arti Singh</span>, <span>
-      Soumik Sarkar</span>, <span>
-      Nirav Merchant</span>, <span>
-      Chinmay Hegde</span>, <span>
-      Baskar Ganapathysubramanian</span>
-    </span>
-
-  <div>
-    <a href="https://baskargroup.github.io/BioTrove/" target="_blank" rel="noopener noreferrer">BioTrove: A Large Curated Image Dataset Enabling AI for Biodiversity</a>
+<!-- BioTrove 2024 -->
+<div class="pub-card">
+  <div class="pub-card-img">
+    <img src="/publication/placeholder.svg" alt="BioTrove NeurIPS 2024">
   </div>
-  38th Conference on Neural Information Processing Systems(<strong>NeurIPS 2024</strong>) Track on Datasets and Benchmarks (Spotlight)
-
-  <div class="btn-links">
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/b92854f80ba4feefb973959b259dbc2c-Paper-Datasets_and_Benchmarks_Track.pdf" target="_blank" rel="noopener">
-  <i class="fas fa-file-pdf mr-1"></i>
-</a>
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/baskargroup/BioTrove" target="_blank" rel="noopener">
-   <i class="fab fa-github mr-1"></i>
-</a>
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://huggingface.co/datasets/BGLab/BioTrove" target="_blank" rel="noopener">
-  <img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="HF" style="height: 14px; margin-right: 6px;"/>
-</a>
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-data-filename="/publication/biotrove2024/cite.bib">
-  <i class="fas fa-quote-right mr-1"></i>
-</a>
-
+  <div class="pub-card-body">
+    <div class="pub-title">
+      <a href="https://baskargroup.github.io/BioTrove/" target="_blank" rel="noopener noreferrer">BioTrove: A Large Curated Image Dataset Enabling AI for Biodiversity</a>
+    </div>
+    <div class="pub-authors">
+      Chih-Hsuan Yang*, Benjamin Feuer*, Talukder Zaki Jubery, Zi K. Deng, Andre Nakkab, <span class="author-highlighted" style="color: #000001;">Md Zahid Hasan</span>, Shivani Chiranjeevi, Kelly O. Marshall, Nirmal Baishnab, Asheesh K Singh, Arti Singh, Soumik Sarkar, Nirav Merchant, Chinmay Hegde, Baskar Ganapathysubramanian
+    </div>
+    <div class="pub-venue">38th Conference on Neural Information Processing Systems (<strong>NeurIPS 2024</strong>) Track on Datasets and Benchmarks (Spotlight)</div>
+    <div class="btn-links">
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/b92854f80ba4feefb973959b259dbc2c-Paper-Datasets_and_Benchmarks_Track.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/baskargroup/BioTrove" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i></a>
+      <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://huggingface.co/datasets/BGLab/BioTrove" target="_blank" rel="noopener"><img src="https://huggingface.co/front/assets/huggingface_logo.svg" alt="HF" style="height: 14px; margin-right: 6px;"/></a>
+      <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal" data-filename="/publication/biotrove2024/cite.bib"><i class="fas fa-quote-right mr-1"></i></a>
+    </div>
   </div>
-
 </div>
+
 </div>
 
 
-    
+
       </div>
-    
+
 
     </div>
   </section>
