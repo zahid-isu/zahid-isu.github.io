@@ -664,24 +664,47 @@
 #leadership .container {
   max-width: 1100px;
 }
-/* Experience two-column grid */
+/* Experience timeline */
 .exp-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  position: relative;
+  padding-left: 60px;
+}
+.exp-grid::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #1565c0, #90caf9);
+  border-radius: 2px;
 }
 .exp-grid .card {
-  height: 100%;
+  position: relative;
   border-radius: 8px;
   border: 1px solid #e5e7eb;
   transition: box-shadow 0.2s ease;
+  margin-bottom: 1.25rem;
+}
+.exp-grid .card::before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 24px;
+  width: 14px;
+  height: 14px;
+  background: #1565c0;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px #1565c0;
+  z-index: 1;
 }
 .exp-grid .card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 .exp-grid .card img {
-  width: 52px;
-  height: 52px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
 }
 #experience .text-muted,
@@ -723,7 +746,13 @@
     max-width: 100%;
   }
   .exp-grid {
-    grid-template-columns: 1fr;
+    padding-left: 40px;
+  }
+  .exp-grid::before {
+    left: 15px;
+  }
+  .exp-grid .card::before {
+    left: -32px;
   }
 }
 </style>
@@ -1616,7 +1645,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
     <div class="card">
       <div class="card-body">
         <div class="d-flex align-content-start">
-          <div class="mr-2 mb-2"><a href="https://www.corteva.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/Corteva.png" width="56px" height="56px" alt="Corteva Agriscience"></a></div>
+          <div class="mr-2 mb-2"><a href="https://www.corteva.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/Corteva.png" width="64px" height="64px" alt="Corteva Agriscience"></a></div>
           <div>
             <div class="section-subheading card-title exp-title my-0">Agentic AI Research Intern</div>
             <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.corteva.com/" target="_blank" rel="noopener">Corteva Agriscience</a></div>
@@ -1635,7 +1664,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
     <div class="card">
       <div class="card-body">
         <div class="d-flex align-content-start">
-          <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="56px" height="56px" alt="Iowa State University"></a></div>
+          <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="64px" height="64px" alt="Iowa State University"></a></div>
           <div>
             <div class="section-subheading card-title exp-title my-0">Research Assistant</div>
             <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://sites.google.com/view/scslab-isu/home" target="_blank" rel="noopener">Self-aware Complex System Lab, Iowa State University</a></div>
@@ -1654,7 +1683,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
     <div class="card">
       <div class="card-body">
         <div class="d-flex align-content-start">
-          <div class="mr-2 mb-2"><a href="https://www.rtx.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/RTX.png" width="56px" height="56px" alt="RTX Corporation"></a></div>
+          <div class="mr-2 mb-2"><a href="https://www.rtx.com/" target="_blank" rel="noopener"><img src="/media/icons/brands/RTX.png" width="64px" height="64px" alt="RTX Corporation"></a></div>
           <div>
             <div class="section-subheading card-title exp-title my-0">Machine Learning Research Intern</div>
             <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.rtx.com/" target="_blank" rel="noopener">RTX Corporation</a></div>
@@ -1677,7 +1706,7 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
     <div class="card">
       <div class="card-body">
         <div class="d-flex align-content-start">
-          <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="56px" height="56px" alt="Iowa State University"></a></div>
+          <div class="mr-2 mb-2"><a href="https://www.iastate.edu/" target="_blank" rel="noopener"><img src="/media/icons/brands/isu3.png" width="64px" height="64px" alt="Iowa State University"></a></div>
           <div>
             <div class="section-subheading card-title exp-title my-0">Teaching Assistant</div>
             <div class="section-subheading card-title exp-company text-muted my-0"><a href="https://www.ece.iastate.edu/" target="_blank" rel="noopener">Dept. of Electrical and Computer Engineering, Iowa State University</a></div>
