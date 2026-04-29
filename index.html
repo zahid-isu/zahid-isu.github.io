@@ -566,11 +566,16 @@
 .review-list .review-name a {
   color: #1a1a2e;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 400;
 }
 .review-list .review-name a:hover {
   color: #1565c0;
   text-decoration: underline;
+}
+.review-header-note {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: #777;
 }
 .review-list .review-if {
   font-size: 0.8rem;
@@ -714,6 +719,16 @@
 }
 #about .ul-edu .description p {
   font-size: 1rem;
+}
+/* Force white backgrounds for Experience, Service, and Awards sections */
+#experience,
+#service,
+#accomplishments {
+  background: #fff !important;
+}
+#experience .home-section-bg,
+#service .home-section-bg {
+  background: #fff !important;
 }
 /* Awards section */
 #accomplishments .container {
@@ -2187,21 +2202,22 @@ Previously, I worked in the <a href="https://tads.research.iastate.edu/" target=
       <h3>Conferences</h3>
       <ul class="review-list">
         <li><span class="review-name"><a href="https://iclr.cc/Conferences/2026" target="_blank" rel="noopener">ICLR 2026</a></span></li>
+        <li><span class="review-name"><a href="https://neurips.cc/Conferences/2026" target="_blank" rel="noopener">NeurIPS 2026</a></span></li>
         <li><span class="review-name"><a href="https://neurips.cc/Conferences/2025" target="_blank" rel="noopener">NeurIPS 2025</a></span></li>
         <li><span class="review-name"><a href="https://chi2026.acm.org/" target="_blank" rel="noopener">IEEE CHI 2026</a></span></li>
       </ul>
     </div>
     <div class="review-category">
-      <h3>Journals</h3>
+      <h3>Journals <span class="review-header-note">(Impact Factor)</span></h3>
       <ul class="review-list">
-        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener">Medical Image Analysis</a></span> <span class="review-if">IF: 11.8</span></li>
-        <li><span class="review-name"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener">IEEE Trans. on Intelligent Transportation Systems</a></span> <span class="review-if">IF: 8.4</span></li>
-        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener">Engineering Applications of Artificial Intelligence</a></span> <span class="review-if">IF: 8.0</span></li>
-        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener">Transportation Research Part D</a></span> <span class="review-if">IF: 7.7</span></li>
-        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener">Pattern Recognition</a></span> <span class="review-if">IF: 7.6</span></li>
-        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener">Neurocomputing</a></span> <span class="review-if">IF: 6.5</span></li>
-        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener">Computers and Electrical Engineering</a></span> <span class="review-if">IF: 4.9</span></li>
-        <li><span class="review-name"><a href="https://journals.sagepub.com/home/DHJ" target="_blank" rel="noopener">Digital Health</a></span> <span class="review-if">IF: 3.3</span></li>
+        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener">Medical Image Analysis</a></span> <span class="review-if">11.8</span></li>
+        <li><span class="review-name"><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6979" target="_blank" rel="noopener">IEEE Trans. on Intelligent Transportation Systems</a></span> <span class="review-if">8.4</span></li>
+        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence/about/insights" target="_blank" rel="noopener">Engineering Applications of Artificial Intelligence</a></span> <span class="review-if">8.0</span></li>
+        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/transportation-research-part-d-transport-and-environment" target="_blank" rel="noopener">Transportation Research Part D</a></span> <span class="review-if">7.7</span></li>
+        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener">Pattern Recognition</a></span> <span class="review-if">7.6</span></li>
+        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/neurocomputing" target="_blank" rel="noopener">Neurocomputing</a></span> <span class="review-if">6.5</span></li>
+        <li><span class="review-name"><a href="https://www.sciencedirect.com/journal/computers-and-electrical-engineering/about/insights" target="_blank" rel="noopener">Computers and Electrical Engineering</a></span> <span class="review-if">4.9</span></li>
+        <li><span class="review-name"><a href="https://journals.sagepub.com/home/DHJ" target="_blank" rel="noopener">Digital Health</a></span> <span class="review-if">3.3</span></li>
       </ul>
     </div>
   </div>
