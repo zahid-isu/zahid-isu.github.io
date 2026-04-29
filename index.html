@@ -715,8 +715,25 @@
 #about p {
   color: #000 !important;
 }
+#about .ul-interests {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
 #about .ul-interests li {
   font-size: 1.05rem;
+  padding: 0.2rem 0 0.2rem 1.2rem;
+  position: relative;
+}
+#about .ul-interests li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 7px;
+  height: 7px;
+  background: #1565c0;
+  border-radius: 2px;
 }
 #about .ul-edu li {
   font-size: 1.05rem;
@@ -1543,17 +1560,8 @@
     <div class="article-style">
       <p>I am a Graduate Research Assistant at the <a href="https://sites.google.com/view/scslab-isu/home" target="_blank" rel="noopener">Self-aware Complex System Lab</a> in Iowa State University. I am working with <a href="https://sites.google.com/view/scslab-isu/principal-investigator?authuser=0" target="_blank" rel="noopener">Dr. Soumik Sarkar</a> on computer vision for autonomous driving and video action understanding.
 I am pursuing my Ph.D. in Electrical Engineering at the Electrical and Computer Engineering Department, under the supervision of <a href="https://www.me.iastate.edu/faculty/profile/soumiks" target="_blank" rel="noopener">Dr. Soumik Sarkar</a> and  <a href="https://www.me.iastate.edu/faculty/profile/baskarg" target="_blank" rel="noopener">Dr. Baskar Ganapathysubramanian</a>. For my current project, I am working on finetuning Vision-language Foundation models (VLMs), investigating the robustness of VLMs, edge-case generation for Foundation models, understanding human actions in video using VLMs and so on. I have experience in working with multimodal (image, video, text) and multi-source (transportation data, clinical data, video data, etc.) data to finetune foundation models in Computer Vision.</p>
-<h3 id="research">Research</h3>
-<p>My research interests are in the intersection of Human-centric AI, Computer Vision, Multimodal Learning, Generative AI-based multi-agent workflows, and efficient finetuning of AI foundation models.
-
-<!-- Especially, my research focuses on the design and formal modeling in the <em>SE for AI</em> area.
-Previously, I worked in the <a href="https://tads.research.iastate.edu/" target="_blank" rel="noopener">D4</a> (Dependable Data-Driven Discovery) Institute at ISU and focused on the dependability of data-driven software. Especially, my research unraveled several SE aspects, compositional reasoning, and verification of fairness property in real-world ML pipelines.</p>
-<p>My research combines the formalization and its application in real-world software. I worked on mining open source repositories and conducted large-scale program analysis using the Boa domain-specific language. I built Python language support for the <a href="http://boa.cs.iastate.edu/" target="_blank" rel="noopener">Boa</a> compiler and analyzed machine learning (ML) programs and Jupyter Notebooks. I am also interested in SE research using rich source of code and metadata available in GitHub, StackOverflow, Kaggle, and solve SE problems in the area of design, architecture, technical debt, defects, modularity, and evolution.</p> -->
 <p>
   <i class="fas fa-download  pr-1 fa-fw"></i> Download my <a href="/uploads/Resume_Zahid_Hasan_2026u.pdf" target="_blank">curriculum vitae</a>. Feel free to reach out for any discussion.</p>
-<!-- I am in the job market in this academic year 2021-22.  -->
-<!-- {style="color: crimson"} -->
-<!-- coral -->
     </div>
 
     <div class="row">
